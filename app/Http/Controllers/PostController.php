@@ -105,7 +105,5 @@ class PostController extends Controller
         return redirect('/post');
     }
     
-    public function hello(){
-        return "hello";
-     }
+    
 }
