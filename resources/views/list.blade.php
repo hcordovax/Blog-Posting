@@ -19,5 +19,6 @@
         {!! Form::close() !!}
         <br/>
     @endforeach
+    
 </body>
 </html>

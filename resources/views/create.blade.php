@@ -25,6 +25,7 @@
                         <button type="submit">post</button>
                         </form>
                     @endif
+                    <a href="{{ url('post')}}">>>Back</a>
                    
                 </div>
             </div>

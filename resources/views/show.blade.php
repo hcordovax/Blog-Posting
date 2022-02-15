@@ -21,7 +21,7 @@
                         {!! Form::textarea('content', old('content'))!!}
                         {!! Form::submit('Comment')!!}
                         {!! Form::close() !!}
-                        
+                        <a href="{{ url('post')}}">>>Back</a>
 
                 </div>
             </div>
