@@ -8,6 +8,7 @@
 </head>
 <body>
     <a href="{{ url('post/create')}}">Create New Post</a>
+    <div class="container">
     @foreach($posts as $post) 
         <br/>
         <br/>
@@ -19,6 +20,9 @@
         {!! Form::close() !!}
         <br/>
     @endforeach
+    </div>
+
+    
     
 </body>
 </html>
