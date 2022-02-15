@@ -13,7 +13,8 @@
                         @foreach($posts as $post) 
                             <br/>
                             <br/>
-                            {{ $post->subject }} 
+                            <b>{{ $post->subject }}</b>
+                            <br/>
                             {!! link_to('/post/' .$post->id, 'View') !!}
                             {!! link_to('/post/' .$post->id. '/edit','Edit')!!}
                             {!! Form::open(['url'=>['/post/delete', $post->id], 'method'=>'POST'])!!}

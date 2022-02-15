@@ -7,12 +7,13 @@
     <title>Document</title>
 </head>
 <body>
+    
     <a href="{{ url('post/create')}}">Create New Post</a>
-    <div class="container">
+    
     @foreach($posts as $post) 
         <br/>
         <br/>
-        {{  $post->subject }} 
+        {{  $post->subject }}
         {!! link_to('/post/' .$post->id, 'View') !!}
         {!! link_to('/post/' .$post->id. '/edit','Edit')!!}
         {!! Form::open(['url'=>['post/delete', $post->id], 'method'=>'POST'])!!}
@@ -20,7 +21,7 @@
         {!! Form::close() !!}
         <br/>
     @endforeach
-    </div>
+    
 
     
     
