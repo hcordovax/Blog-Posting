@@ -102,7 +102,10 @@ class PostController extends Controller
     public function destroy($id)
     {
         Post::find($id)->delete();
-
         return redirect('/post');
     }
+    
+    public function hello(){
+        return "hello";
+     }
 }
