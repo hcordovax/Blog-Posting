@@ -70,9 +70,9 @@ class PostController extends Controller
      */
     public function edit($id)
     {
+        
         //select * from post where id =$id
         $post = Post::find($id);
-        
         return view('create', compact('post'));
     }
 
